@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bán hàng</title>
+    <link rel="stylesheet" href="css/banhang.css">
+</head>
+<body>
+    <div class="container">
+        <select id="mucgia" onchange="doimucgia()">
+            <option value="-1">Chọn mức giá</option>
+            <option value="300">Đến 300</option>
+            <option value="500">Đến 500</option>
+            <option value="700">Đến 700</option>
+            <option value="900">Đến 900</option>
+            <option value="1000">Đến 1000</option>
+        </select>
+        <table border="1" id="table_SP">     
+                <th colspan="2">Hàng hóa</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            <tr>
+                <td><input onclick="tich1checkbox(0)" type="checkbox" name="chon"></td>
+                <td>Iphone</td>
+                <td name="gia">900</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(1)"type="checkbox" name="chon"></td>
+                <td>Samsung</td>
+                <td name="gia">800</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(2)" type="checkbox" name="chon"></td>
+                <td>Nokia</td>
+                <td name="gia">300</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(3)" type="checkbox" name="chon"></td>
+                <td>Sony</td>
+                <td name="gia">700</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(4)" type="checkbox" name="chon"></td>
+                <td>Xiaomi</td>
+                <td name="gia">500</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(5)" type="checkbox" name="chon"></td>
+                <td>Oppo</td>
+                <td name="gia">400</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(6)" type="checkbox" name="chon"></td>
+                <td>Huawei</td>
+                <td name="gia">600</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr class="tong">
+                <th colspan="4">TỔNG</th>
+                <td id="tinhtong"><b>0</b></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+<script>
+    function doimucgia(){
+        var arrGia = document.getElementsByName("gia");
+        var obj = document.getElementById("mucgia");
+        mucdangchon = obj.value;
+        for(i=0; i<arrGia.length;i++){
+            gia = parseFloat(arrGia[i].innerText);
+            if(gia<mucdangchon || mucdangchon==-1){
+                arrGia[i].parentNode.style.display="";
+            }
+            else{
+                arrGia[i].parentNode.style.display="none";
+            }
+        }
+        tongtien();
+    }
+</script>
+<script>
+    function tich1checkbox(i){
+        var arrSL = document.getElementsByName("soluong");
+        arrSL[i].disabled = !arrSL[i].disabled;
+        if(arrSL[i].disabled==true){
+            arrSL[i].value=0;
+            arrSL[i].parentNode.nextElementSibling.innerText="";
+        }
+        tongtien();
+    }
+</script>
+<script>
+    function thanhtien(obj){
+        var soluong = obj.value;
+        var gia = obj.parentNode.previousElementSibling.innerText;
+        obj.parentNode.nextElementSibling.innerText= soluong*gia;
+        tongtien();
+    }
+</script>
+<script>
+    function tongtien(){
+        tt = 0;
+        var arrThanhTien = document.getElementsByName("thanhtien");
+        for(i=0; i<arrThanhTien.length;i++){
+            tien = arrThanhTien[i].innerText;
+            tt+=Number(tien);
+        }
+        document.getElementById("tinhtong").innerText=tt;
+    }
+</script>

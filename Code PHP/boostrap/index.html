@@ -1,0 +1,685 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figcom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<header>
+    <div class="container-fluid" style="width: 100%; background-color: #EE3E38; border: none;">
+        <div class="row">
+            <div class="col-4" style="font-size: 11px; color: white; margin-top: 3px; padding-left:195px;">
+                ĐAM MÊ KHÔNG CHỈ CÓ TRÊN MÀN ẢNH
+            </div>
+            <div class="col-4" style="display: flex; padding-left: 120px;">
+                <img src="/boostrap/images/email.png" alt="" style="width: 16px; height: 17px; margin-top: 3px;">
+                <h4 style="font-size: 11px; color: white; margin-left: 5px; margin-top: 5px;">CONTACT</h4>
+                <img src="/boostrap/images/time.png" alt="" style="width: 16px; height: 17px; margin-top: 3px; margin-left: 30px;">
+                <h4 style="font-size: 11px; color: white; margin-left: 5px; margin-top: 5px;">8:00 - 22:00</h4>
+                <img src="/boostrap/images/phone-call.png" alt="" style="width: 16px; height: 17px; margin-top: 3px; margin-left: 30px;">
+                <h4 style="font-size: 11px; color: white; margin-left: 5px; margin-top: 5px;">0123456789</h4>
+            </div>
+            <div class="col-4" style="font-size: 11px; color: white; margin-top: 3px; padding-left:195px;">
+                SHOP MÔ HÌNH ANIME
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="container" style="width:100%; height: 200px;">
+        <div class="row">
+            <div class="col-4">
+                <a href="/boostrap/index.html">
+                    <img src="/boostrap/images/logo do.png" alt="" style="width: 240px; height: 190px">
+                </a>   
+            </div>
+            <div class="col-4" style="margin-top: 80px;">
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Tìm kiếm" aria-label="Search" aria-describedby="search-addon" />
+                    <button type="button" class="btn btn-outline-primary" style="background-color: #EE3E38; color: #FFFFFF; border: #EE3E38;">
+                        search
+                    </button>
+                  </div>
+            </div>
+            <div class="col-4" style="display: flex; margin-top: 85px;">
+                <a href="" style="text-decoration: none; color: black; margin-top: 5px;">
+                    <h4 style="font-size: 14px;">YÊU THÍCH</h4>
+                </a>
+                <a href="/boostrap/pages/giohang.html" >
+                    <img src="/boostrap/images/heart (1).png" alt="" style="width: 35px; height: 33px; margin-left: 10px;">
+                </a>
+                <a href="/boostrap/pages/giohang.html" style="text-decoration: none; color: black; margin-top: 5px">
+                    <h4 style="font-size: 14px; margin-left: 10px;">GIỎ HÀNG</h4>
+                </a>
+                <a href="">
+                    <img src="/boostrap/images/shopping-cart (1).png" alt="" style="width: 35px; height: 33px; margin-left: 10px;">
+                </a>
+                <a href="" style="text-decoration: none; color: black; margin-top: 5px">
+                    <h4 style="font-size: 14px; margin-left: 10px;">ĐĂNG NHẬP/ĐĂNG KÝ</h4>
+                </a>
+            </div>     
+        </div>
+    </div>
+
+    <script>
+         let text = "Mr. Blue has a blue house"
+         let position = text.search("blue");
+        
+         document.getElementById("demo").innerHTML = position;
+    </script>
+
+    <div class="container-fluid">
+        <style>
+            .container-fluid{
+                width: 73.5%;
+                border: 0.2px solid black;
+            }
+        </style>
+    </div>
+    <div class="container"  style="border: none">
+        <ul class="nav" style="margin-top: 10px; margin-left: 103px">
+            <li style="background-color: #EE3E38; width: 200px;" class="nav-item dropdown">
+                <img style="float: left; margin: 10px 5px 0 5px" width="23" height="23" src="/boostrap/images/menu.png" alt="">
+                <a style="color: #FFFFFF" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Danh mục sản phẩm</a>
+                <ul class="dropdown-menu">
+                    <li style="width: 190px; border-radius:none;"><a class="dropdown-item" href="/boostrap/pages/action_figures.html">Action Figure</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/boostrap/pages/nendoroid.html">Nendoroid</a> </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/boostrap/pages/mh_anime.html">Mô hình Anime</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/boostrap/pages/mh_game.html">Mô hình Game</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a style="color: #666666; margin-left: 30px;" class="nav-link" href="/boostrap/index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: #666666; margin-left: 30px;" class="nav-link" href="/boostrap/pages/gioithieu.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: #666666; margin-left: 30px;" class="nav-link" href="/boostrap/pages/camnang.html">Cẩm nang</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: #666666; margin-left: 30px;" class="nav-link" href="/boostrap/pages/products.html">Sản phẩm</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: #666666; margin-left: 30px;" class="nav-link" href="#">Khuyến mãi</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: #666666; margin-left: 30px;" class="nav-link" href="/boostrap/pages/news.html">Tin tức</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: #666666; margin-left: 30px;" class="nav-link" href="/boostrap/pages/contact.html">Liên hệ</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="width: 100%; height: 1000px; margin-top: 10px;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/boostrap/images/gogeta.jpg" class="d-block w-100" alt="..." style="width: 100%; height: 979px">
+          </div>
+          <div class="carousel-item">
+            <img src="/boostrap/images/Megumi Fushiguro - Jujutsu kaizen Fan Art Statue For 3D printing, Gabriel Freire.jpg" class="d-block w-100" alt="..." style="width: 100%; height: 979px">
+          </div>
+          <div class="carousel-item">
+            <img src="/boostrap/images/Roronoa Zoro.jpg" class="d-block w-100" alt="..." style="width: 100%; height: 979px">
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="border: none; margin-top: 10px; margin-bottom: 10px;">
+        <div class="row">
+            <div class="col-12" style="text-align: center; font-size: 25px; color: #EE3E38;">
+                <h4>MÔ HÌNH FIGURE BÁN CHẠY NHẤT</h4>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid" style="border: none;">
+        <div class="row">
+            <div class="col-3" style="text-align: center;">
+                <a href="/boostrap/pages/ctsp_onepiece/ctsp_zoro.html">
+                    <img src="/boostrap/images/fig_zoro_index.jpg" alt="" style="width: 247px; height: 417px; border: 1px solid gainsboro;">
+                </a>
+            </div>
+
+            <div class="col-3" style="text-align: center;">
+                <a href="/boostrap/pages/ctsp_naruto/ctsp_sasuke.html">
+                    <img src="/boostrap/images/fig_sasuke_index.jpg" alt="" style="width: 247px; height: 417px; border: 1px solid gainsboro;">
+                </a>
+            </div>
+
+            <div class="col-3" style="text-align: center;">
+                <a href="/boostrap/pages/ctsp_dragonball/ctsp_gogeta.html">
+                    <img src="/boostrap/images/fig_gogeta_index.jpg" alt="" style="width: 247px; height: 417px; border: 1px solid gainsboro;">
+                </a>
+                
+            </div>
+
+            <div class="col-3" style="text-align: center;">
+                <a href="/boostrap/pages/ctsp_dragonball/ctsp_trunks.html">
+                    <img src="/boostrap/images/fig_trunks_index.jpg" alt="" style="width: 247px; height: 417px; border: 1px solid gainsboro;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid " style="border: none;">
+        <div class="row">
+            <div class="col-3">
+                <a href="/boostrap/pages/mh_anime.html" style="text-decoration: none; color: black; text-align: center;">
+                    <h3 style="font-size: 18px; margin-top: 10px; margin-bottom: 10px;">
+                        Mô hình anime
+                    </h3>
+                </a>
+                <a href="/boostrap/pages/ctsp_zoro.html" style="text-decoration: none; color: black; text-align: center;">
+                    <h4 style="font-size: 16px;"> 
+                        One Piece Creator x Creator Zoro Roronoa (Ver.A)
+                    </h4>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="/boostrap/pages/mh_anime.html" style="text-decoration: none; color: black; text-align: center;">
+                    <h3 style="font-size: 18px; margin-top: 10px; margin-bottom: 10px; text-align: center;">
+                        Mô hình anime
+                    </h3>
+                </a>
+                <a href="/boostrap/pages/ctsp_naruto/ctsp_sasuke.html" style="text-decoration: none; color: black;">
+                    <h4 style="font-size: 16px; text-align: center;"> 
+                        Naruto: Shippuden S.H.Figuarts Sasuke Uchiha (He Who Bears All Hatred)
+                    </h4>
+                </a>
+                
+            </div>
+            <div class="col-3">
+                <a href="/boostrap/pages/mh_anime.html" style="text-decoration: none; color: black; text-align: center;">
+                    <h3 style="font-size: 18px; margin-top: 10px; margin-bottom: 10px; text-align: center;">
+                        Mô hình anime
+                    </h3>
+                </a>
+                <a href="/boostrap/pages/ctsp_dragonball/ctsp_goku.html" style="text-decoration: none; color: black; text-align: center;">
+                    <h4 style="font-size: 16px;"> 
+                        Dragon Ball Super S.H.Figuarts Super Saiyan God Super Saiyan Gogeta
+                    </h4>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="/boostrap/pages/mh_anime.html" style="text-decoration: none; color: black; text-align: center;">
+                    <h3 style="font-size: 18px; margin-top: 10px; margin-bottom: 10px; text-align: center;">
+                        Mô hình anime
+                    </h3>
+                </a>
+                <a href="/boostrap/pages/ctsp_dragonball/ctsp_trunks.html" style="text-decoration: none; color: black; text-align: center;">
+                    <h4 style="font-size: 16px; text-align: center;"> 
+                        Dragon Ball Z S.H.Figuarts Super Saiyan Trunks (Boy from the Future)
+                    </h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="border: none;">
+        <div class="row">
+            <div class="col-3">
+                <h4 style="font-size: 20px; border: 1px solid white; border-radius: 5px; color: #EE3E38; text-align: center;">
+                    300.000đ
+                </h4>
+            </div>
+            <div class="col-3">
+                <h4 style="font-size: 20px; border: 1px solid white; border-radius: 5px; color: #EE3E38; text-align: center;">
+                    1.471.000đ
+                </h4>
+            </div>
+            <div class="col-3">
+                <h4 style="font-size: 20px; border: 1px solid white; border-radius: 5px; color: #EE3E38; text-align: center;">
+                    350.000đ
+                </h4>
+            </div>
+            <div class="col-3">
+                <h4 style="font-size: 20px; border: 1px solid white; border-radius: 5px; color: #EE3E38; text-align: center;">
+                    350.000đ
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="height: 630px; margin-top: 30px; margin-bottom: 30px; border: none;">
+        <div class="row" style="height: 630px;">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <a href="/boostrap/pages/ctsp_nendoroid/ctsp_nen_donald duck.html">
+                        <img src="/boostrap/images/Nendoroid Donald Duck.jpg" class="d-block w-100 h-100" alt="...">
+                    </a>
+                    
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="color: white;">Disney Nendoroid No.1668 Donald Duck</h5>
+                      <p style="color: white;">Click để xem ngay</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <a href="/boostrap/pages/ctsp_nendoroid/ctsp_nen_pre.html">
+                        <img src="/boostrap/images/Nendoroid Predator.jpg" class="d-block w-100 h-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="color: white">Predator Nendoroid No.1845 Predator</h5>
+                      <p style="color: white">Click để xem ngay</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="/boostrap/pages/ctsp_nendoroid/ctsp_robbie.html">
+                        <img src="/boostrap/images/Nendoroid Robbie.jpg" class="d-block w-100 h-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: white">Silent Hill 3 Nendoroid No.1811b Robbie the Rabbit (Blue)</h5>
+                        <p style="color: white">Click để xem ngay</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="border: none; margin-top: 30px; margin-bottom: 10px;">
+        <div class="row">
+            <div class="col-4" style="text-align: center;">
+
+            </div>
+            <div class="col-4" style="text-align: center; font-size: 25px; color: #EE3E38;">
+                <h4>MÔ HÌNH FIGURE MỚI NHẤT</h4>
+            </div>
+            <div class="col-4" style="text-align: center;">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="border: none;">
+        <div class="row">
+            <div class="col-6">
+                <div class="img" style="width: 100%; height: 580px; border: 1px solid gainsboro;">
+                    <a href="/boostrap/pages/ctsp_mh game/ctsp_carnage.html" style="text-decoration: none; color: black">
+                        <img src="/boostrap/images/fig_carnage.jpg" alt="" style="width: 100%; height: 578px;">
+                        <h3 style="font-size: 24px; margin-top: 10px;">
+                            One Piece Chronicle Master Stars Piece Shanks
+                        </h3>
+                        <span>
+                            450.000đ
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="img" style="width: 100%; height: 580px; border: 1px solid gainsboro;">
+                    <a href="/boostrap/pages/ctsp_mh game/ctsp_darkstalkers.html" style="text-decoration: none; color: black">
+                        <img src="/boostrap/images/fig_Darkstalkers.jpg" alt="" style="width: 100%; height: 580px;">
+                        <h3 style="font-size: 24px;  margin-top: 10px;">
+                            Darkstalkers Bishoujo Morrigan                    
+                        </h3>
+                        <span>
+                            2.975.000đ
+                        </span>
+                    </a>                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top: 110px; height: 355px; border: none;">
+        <div class="row">
+            <div class="col-3">
+                <div class="img" style="width: 247px; height: 280px; border: 1px solid gainsboro;">
+                    <a href="/boostrap/pages/ctsp_nendoroid/ctsp_nen_sus.html" style="text-decoration: none; color: black">
+                        <img src="/boostrap/images/Nendoroid Among Us.jpg" alt="" style="width: 100%; height: 278px;">
+                        <h3 style="font-size: 14px; margin-top: 10px;">
+                            Among Us Nendoroid No.1791a Crewmate (Red)
+                        </h3>
+                        <span style="font-size: 14px;">
+                            991.000đ
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="img" style="width: 247px; height: 280px; border: 1px solid gainsboro;">
+                    <a href="/boostrap/pages/ctsp_dragonball/ctsp_frieza.html" style="text-decoration: none; color: black">
+                        <img src="/boostrap/images/fig_frieza.jpg" alt="" style="width: 100%; height: 280px;">
+                        <h3 style="font-size: 14px; margin-top: 10px;">
+                            Dragon Ball Z S.H.Figuarts Frieza (4th Form)
+                        </h3>
+                        <span style="font-size: 14px;">
+                            350.000đ
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="img" style="width: 247px; height: 280px; border: 1px solid gainsboro;">
+                    <a href="/boostrap/pages/ctsp_mh game/ctsp_joker.html" style="text-decoration: none; color: black">
+                        <img src="/boostrap/images/fig_joker.jpg" alt="" style="width: 100%; height: 280px;">
+                        <h3 style="font-size: 14px; margin-top: 10px;">
+                            DC Comics Amazing Yamaguchi Revoltech No.021 The Joker
+                        </h3>
+                        <span style="font-size: 14px;">
+                            2.206.000đ
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="img" style="width: 247px; height: 280px; border: 1px solid gainsboro;">
+                    <a href="/boostrap/pages/ctsp_onepiece/ctsp_sanji.html" style="text-decoration: none; color: black">
+                        <img src="/boostrap/images/fig_sanji.jpg" alt="" style="width: 100%; height: 278px;">
+                        <h3 style="font-size: 14px; margin-top: 10px;">
+                            One Piece The Grandline Men Wano Country Vol.20 Sanji
+                        </h3>
+                        <span style="font-size: 14px;">
+                            550.000đ
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="border: none; margin-top: 30px; margin-bottom: 10px;">
+        <div class="row">
+            <div class="col-12" style="text-align: center; font-size: 25px; color: #EE3E38; margin-top: 30px;">
+                <h4>MÔ HÌNH FIGURE KHUYẾN MÃI</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top: 30px; height: 355px; border: none;">
+        <div class="row">
+            <div class="col-3">
+                <div class="img" style="width: 247px; height: 280px; border: 1px solid gainsboro;">
+                    <a href="" style="text-decoration: none;" >
+                        <img src="/boostrap/images/itachi.png" alt="" style="width: 100%; height: 280px;">
+                        <h3 style="font-size: 14px; margin-top: 10px; color: black;">
+                            Mô Hình Naruto – Akatsuki Uchiha Itachi Crow Trang Trí Rất Đẹp
+                        </h3>
+                        <del style="font-size: 14px; color: black;">
+                            350.000đ
+                        </del>
+                        <span style="font-size: 14px; color: #EE3E38; font-weight: bold; margin-left: 20px;">
+                            320.000đ
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="img" style="width: 247px; height: 280px; border: 1px solid gainsboro;">
+                    <a href="" style="text-decoration: none;">
+                        <img src="/boostrap/images/naruto.png" alt="" style="width: 100%; height: 280px;">
+                        <h3 style="font-size: 14px; margin-top: 10px; color:black">
+                            Mô Hình Naruto Trạng Thái Hiền Nhân Thuật Với 2 Sư Phụ Cóc
+                        </h3>
+                        <del style="font-size: 14px; color:black">
+                            360.000đ
+                        </del>
+                        <span style="font-size: 14px; color: #EE3E38; font-weight: bold; margin-left: 20px;">
+                            350.000đ
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="img" style="width: 247px; height: 280px; border: 1px solid gainsboro;">
+                    <a href="" style="text-decoration: none;">
+                        <img src="/boostrap/images/marco.png" alt="" style="width: 100%; height: 280px;">
+                        <h3 style="font-size: 14px; margin-top: 10px; color:black">
+                            Mô Hình Marco Phượng Hoàng siêu to cao 44cm – Full Box 
+                        </h3>
+                        <del style="font-size: 14px; color:black">
+                            230.000đ
+                        </del>
+                        <span style="font-size: 14px; color: #EE3E38; font-weight: bold; margin-left: 20px;">
+                            210.000đ
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="img" style="width: 247px; height: 280px; border: 1px solid gainsboro;">
+                    <a href="" style="text-decoration: none;">
+                        <img src="/boostrap/images/sg-11134201-22100-i2x67630e3iv72-removebg-preview.png" alt="" style="width: 100%; height: 280px;">
+                        <h3 style="font-size: 14px; margin-top: 10px; color:black">
+                            Bộ Sưu Tập One Piece Team Wano Kimono Sword Cool !!
+                        </h3>
+                        <del style="font-size: 14px; color:black">
+                            360.000đ
+                        </del>
+                        <span style="font-size: 14px; color: #EE3E38; font-weight: bold; margin-left: 20px;">
+                            350.000đ
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="border: none; margin-top: 30px;">
+        <div class="row">
+            <div class="col-4">
+                <div class="img" style="width: 332px; height: 160px;">
+                    <a href="/boostrap/pages/mh_anime.html">
+                        <img src="/boostrap/images/chibi_figure___19_.jpg" alt="" style="position: absolute; width: 332px; height: 160px; background: rgba(0, 0, 0, 0.5); filter: blur(8px); -webkit-filter: blur(1.5px);">
+                        <h3 style="position: absolute; text-align: center; margin-top: 80px; margin-left: 70px; color: white; font-size: 24px;">
+                            ANIME FIGURES
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="img" style="width: 332px; height: 160px;">
+                    <a href="/boostrap/pages/action_figures.html">
+                        <img src="/boostrap/images/gokuvsvegeta.jpg" alt="" style="position: absolute; width: 332px; height: 160px; background: rgba(0, 0, 0, 0.5); filter: blur(8px); -webkit-filter: blur(1.5px);">
+                        <h3 style="position: absolute; text-align: center; margin-top: 80px; margin-left: 75px; color: white; font-size: 24px;">
+                            ACTION FIGURES
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="img" style="width: 332px; height: 160px;">
+                    <a href="/boostrap/pages/nendoroid.html">
+                        <img src="/boostrap/images/nendoroid.jpg" alt="" style="position: absolute; width: 332px; height: 160px; background: rgba(0, 0, 0, 0.5); filter: blur(8px); -webkit-filter: blur(1.5px);">
+                        <h3 style="position: absolute; text-align: center; margin-top: 80px; margin-left: 95px; color: white; font-size: 24px;">
+                            NENDOROID
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="border: none; margin-top: 30px; margin-bottom: 10px;">
+        <div class="row">
+            <div class="col-4" style="text-align: center;">
+
+            </div>
+            <div class="col-4" style="text-align: center; font-size: 25px; color: #EE3E38; margin-top: 30px;">
+                <h4>TIN TỨC ANIME</h4>
+            </div>
+            <div class="col-4" style="text-align: center;">
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="height: 310px; border: none; margin-top: 30px;">
+        <div class="row">
+            <div class="col-3">
+                <div class="img" style="width: 240px; height: 148px; ">
+                    <a href="" style="text-decoration: none;">
+                        <img src="/boostrap/images/Hahaha.jpg" alt="" style="width: 100%; height: 148px;">
+                        <h4 style="font-size: 17px; text-align: center; color: #EE3E38; margin-top: 30px;">
+                            Top 6 Sức Mạnh Đỉnh Của Chóp Nhất Zoro Đã Thể Hiện Ở Wano
+                        <h4 style="font-size: 14px; text-align: center; margin-top: 30px; color: black;">
+                            Roronoa Zoro, một trong những hải tặc mạnh nhất trong One Piece, đã đạt được [...]
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="img" style="width: 240px; height: 148px;">
+                    <a href="" style="text-decoration: none;">
+                        <img src="/boostrap/images/Obito Uchiha.png" alt="" style="width: 100%; height: 148px;">
+                        <h4 style="font-size: 17px; text-align: center; color: #EE3E38; margin-top: 30px;">
+                            Uchiha Obito Với 15 Điều Thú Vị Có Thể Bạn Chưa Biết Về Anh Chàng Này
+                        <h4 style="font-size: 14px; text-align: center; margin-top: 30px; color: black;">
+                            Uchiha Obito chính là một trong những nhân vật phản diện phức tạp nhất trong [...]
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="img" style="width: 240px; height: 148px;">
+                    <a href="" style="text-decoration: none;">
+                        <img src="/boostrap/images/10 Anime Like 'Shigatsu wa Kimi no Uso' ('Your Lie in April').jpg" alt="" style="width: 100%; height: 148px;">
+                        <h4 style="font-size: 17px; text-align: center; color: #EE3E38; margin-top: 30px;">
+                            Top 20 Anime Buồn Hay Nhất Thách Bạn Không Khóc
+                        <h4 style="font-size: 14px; text-align: center; margin-top: 51px; color: black;">
+                            Đôi khi chúng ta cần một hành động nhịp độ cao hoặc một số bộ [...]
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="img" style="width: 240px; height: 148px;">
+                    <a href="" style="text-decoration: none;">
+                        <img src="/boostrap/images/ducks.jpg" alt="" style="width: 100%; height: 148px;">
+                        <h4 style="font-size: 17px; text-align: center; color: #EE3E38; margin-top: 30px;">
+                            Top 12 Bộ Anime Dễ Thương Siêu Hay Mà Bạn Không Thể Bỏ Qua
+                        <h4 style="font-size: 14px; text-align: center; margin-top: 30px; color: black;">
+                            Khi nhắc đến những bộ anime dễ thương chúng ta không thể bỏ qua được [...]
+                        </h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="border: none; margin-top: 30px; margin-bottom: 10px;">
+        <div class="row">
+            <div class="col-12" style="text-align: center; font-size: 25px; color: #EE3E38; margin-top: 30px;">
+                <h4>LUÔN LÀM CÁC TÍN ĐỒ FIGURE HÀI LÒNG</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top: 30px; border: none; margin-top: 50px;">
+        <div class="row">
+            <div class="col-3">
+                <h3 style="font-size: 20px; text-align: center; color: #EE3E38;">GIAO HÀNG NHANH</h3>
+                <h4 style="font-size: 18px; text-align: center; margin-top: 30px;">Vận chuyển trên toàn quốc</h4>
+            </div>
+            <div class="col-3">
+                <h3 style="font-size: 20px; text-align: center; color: #EE3E38;">MIỄN PHÍ GIAO HÀNG</h3>
+                <h4 style="font-size: 18px; text-align: center; margin-top: 30px;">Với các đơn hàng trên 1 triệu đồng</h4>
+            </div>
+            <div class="col-3">
+                <h3 style="font-size: 20px; text-align: center; color: #EE3E38;">KÝ GỬI BÁN HỘ</h3>
+                <h4 style="font-size: 18px; text-align: center; margin-top: 30px;">Bạn có nhu cầu thanh lý figure? Hãy liên hệ với tụi mình nhé</h4>
+            </div>
+            <div class="col-3">
+                <h3 style="font-size: 20px; text-align: center; color: #EE3E38;">HỖ TRỢ 24/7</h3>
+                <h4 style="font-size: 18px; text-align: center; margin-top: 30px;">Phục vụ tân tình, nhiệt huyết hết mình với khách hàng</h4>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container-fluid" style="width: 100%; height: 440px; background-color: #EE3E38; border: none; margin-top: 100px;">
+        <div class="row">
+            <div class="col-3">
+                <div class="img" style="width: 350px; height: 300px; margin-top: 100px;">
+                    <img src="/boostrap/images/logo trang.png" alt="" style="width: 407px; height: 300px;">
+                </div>
+            </div>
+            <div class="col-3">
+                <h3 style="font-size: 24px; color: white; margin-top: 50px">
+                    Danh mục sản phẩm
+                </h3>
+                <a href="/boostrap/pages/mh_anime.html" style="text-decoration: none; color: #FFFFFF;">
+                    <h4 style="font-size: 20px; margin-top: 40px; margin-bottom: 30px;">
+                        Mô hình anime
+                    </h4>
+                </a>
+                <a href="/boostrap/pages/mh_game.html" style="text-decoration: none; color: #FFFFFF;">
+                    <h4 style="font-size: 20px; margin-top: 40px; margin-bottom: 30px;">
+                        Mô hình game
+                    </h4>
+                </a>
+                <a href="/boostrap/pages/nendoroid.html" style="text-decoration: none; color: #FFFFFF;">
+                    <h4 style="font-size: 20px; margin-top: 40px; margin-bottom: 30px;">
+                        Nendoroid
+                    </h4>
+                </a>
+                <a href="/boostrap/pages/action_figures.html" style="text-decoration: none; color: #FFFFFF;">
+                    <h4 style="font-size: 20px; margin-top: 40px; margin-bottom: 30px;">
+                        Action Figures
+                    </h4>
+                </a>
+            </div>
+            <div class="col-3">
+                <h3 style="font-size: 24px; color: white; margin-top: 50px">
+                    Liên hệ
+                </h3>
+                <h4 style="font-size: 20px; color: white; margin-top: 30px; margin-bottom: 30px;">
+                    Mô hình Figure - Shop chuyên bán mô hình Anime
+                </h4>
+                <h4 style="font-size: 20px; color: white; margin-top: 30px; margin-bottom: 30px;">
+                    Địa chỉ 499/12CMT8 P.13,Q.10
+                </h4>
+                <h4 style="font-size: 20px; color: white; margin-top: 30px; margin-bottom: 30px;">
+                    Hotline: 0123456789
+                </h4>
+                <h4 style="font-size: 20px; color: white; margin-top: 30px; margin-bottom: 30px;">
+                    Email:Figcom@gmail.com
+                </h4>
+                <div class="img" style="width: 200px; height: 39px;">
+                    <a href="" style="text-decoration: none;">
+                        <img src="/boostrap/images/facebook.png" alt="" style="width: 43px; height: 39px;">
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <img src="/boostrap/images/google.png" alt="" style="width: 43px; height: 39px; margin-left: 15px;">
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <h3 style="font-size: 24px; color: white; margin-top: 50px">
+                    KẾT NỐI MÔ HÌNH FGURE
+                </h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31355.41140085741!2d106.64458347910157!3d10.778615800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9dd6197add%3A0xbb4f1bb2620a9540!2sKP%20Figure%203!5e0!3m2!1svi!2s!4v1667798945800!5m2!1svi!2s" width="300px" height="245px" style="border:0; margin-top: 30px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

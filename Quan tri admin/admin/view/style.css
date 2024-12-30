@@ -1,0 +1,63 @@
+header{
+    text-align: center;
+    margin: 50px 50px;
+}
+nav{
+    margin: 30px;
+    font-size: 20pt;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+nav a:hover{
+    color:darkmagenta;
+}
+section h2{
+    padding-left: 400px;
+}
+form{
+    margin-left: 400px;
+    margin-top: 10px;
+}
+.tbl{
+    margin-left: 400px;
+}
+.table.table-dark{
+    background-color: black;
+    color: white;
+}
+.table.table-hover tbody tr:hover{
+    background-color: #333;
+}
+.tbl{
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tbl table{
+    width: 400px;
+}
+.tbl table, tr, th, td{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+.tbl td, th{
+    padding: 6px 10px;
+}
+.tbl thead, th{
+    text-align: left;
+}
+.tbl a{
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.tbl a:hover{
+    color: bisque;
+}
+footer{
+    text-align: center;
+    margin: 50px 50px;
+}
